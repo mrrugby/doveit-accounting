@@ -2,17 +2,17 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "DoveIT has transformed our financial operations. Their attention to detail and proactive approach has saved us countless hours and significantly improved our bottom line.",
+    quote: "Sovreign Payroll Services has transformed our financial operations. Their attention to detail and proactive approach has saved us countless hours and significantly improved our bottom line.",
     author: "Sarah Mwangi",
     role: "CEO, TechStart Kenya",
   },
   {
-    quote: "Working with DoveIT Accounting has been a game-changer for our business. Their expertise in tax planning has helped us optimize our finances effectively.",
+    quote: "Working with Sovreign Payroll Services has been a game-changer for our business. Their expertise in tax planning has helped us optimize our finances effectively.",
     author: "James Ochieng",
     role: "Managing Director, Ochieng Enterprises",
   },
   {
-    quote: "Professional, reliable, and always available when we need them. DoveIT truly understands the needs of growing businesses in today's market.",
+    quote: "Professional, reliable, and always available when we need them. Sovreign Payroll Services truly understands the needs of growing businesses in today's market.",
     author: "Grace Wanjiku",
     role: "Founder, Wanjiku Imports",
   },
@@ -31,7 +31,7 @@ export function Testimonials() {
             Trusted by Leading Businesses
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Don't just take our word for it. Here's what our clients have to say about working with DoveIT Accounting.
+            Don't just take our word for it. Here's what our clients have to say about working with Sovreign Payroll Services.
           </p>
         </div>
 

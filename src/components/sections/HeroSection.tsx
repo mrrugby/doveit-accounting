@@ -35,7 +35,8 @@ export function HeroSection() {
             className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl animate-fade-up"
             style={{ animationDelay: "0.3s" }}
           >
-            Professional accounting, bookkeeping, and financial consulting for individuals and businesses. We help you focus on what matters most—growing your business.
+            Sovereign Payroll Services is a premium payroll solutions provider dedicated to delivering accuracy,
+reliability, and compliance for businesses of all sizes. Built on integrity and professionalism, we handle every aspect of payroll meticulously.
           </p>
 
           {/* CTA Buttons */}

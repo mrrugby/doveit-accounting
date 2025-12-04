@@ -17,7 +17,7 @@ export function CTABanner() {
             Ready to Streamline Your Finances?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-10 leading-relaxed">
-            Partner with DoveIT Accounting and experience the difference that professional financial management can make for your business.
+            Partner with Sovreign Payroll Services and experience the difference that professional financial management can make for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild variant="accent" size="xl" className="group">

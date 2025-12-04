@@ -8,11 +8,12 @@ const footerLinks = {
     { name: "Contact", href: "/contact" },
   ],
   services: [
-    { name: "Accounting", href: "/services" },
-    { name: "Bookkeeping", href: "/services" },
-    { name: "Tax Preparation", href: "/services" },
-    { name: "Business Advisory", href: "/services" },
-  ],
+  { name: "Complete Payroll Processing", href: "/services" },
+  { name: "Tax & Compliance Management", href: "/services" },
+  { name: "Direct Deposits & Payment Management", href: "/services" },
+  { name: "Employee Onboarding & Records", href: "/services" },
+  { name: "HR Support & Consultation", href: "/services" },
+],
 };
 
 export function Footer() {
@@ -23,12 +24,19 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">D</span>
-              </div>
-              <span className="font-bold text-xl tracking-tight">
-                DoveIT<span className="text-accent">.</span>
-              </span>
+              
+
+
+              <div className="w-10 h-10 rounded-full flex items-center justify-center">
+             <img
+                 src="/logo.svg"            
+                 alt="Sovereign Payroll Services Logo"
+                 className="w-8 h-8 object-contain"       
+              />
+            </div>
+            <span className="font-bold text-xl tracking-tight">
+              Sovreign Payroll Services<span className="text-accent">.</span>
+            </span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Professional accounting and financial consulting services for individuals and businesses. Building trust through excellence.
@@ -81,16 +89,16 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm">
                 <Mail size={18} className="text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-primary-foreground/70">info@doveitaccounting.com</span>
+                <span className="text-primary-foreground/70">sovereignpayrollservices@gmail.com</span>
               </li>
               <li className="flex items-start gap-3 text-sm">
                 <Phone size={18} className="text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-primary-foreground/70">+254 700 000 000</span>
+                <span className="text-primary-foreground/70">+356 9903 84430</span>
               </li>
               <li className="flex items-start gap-3 text-sm">
                 <MapPin size={18} className="text-accent mt-0.5 flex-shrink-0" />
                 <span className="text-primary-foreground/70">
-                  Nairobi, Kenya
+                  Tarxien, Malta
                 </span>
               </li>
             </ul>
@@ -101,7 +109,7 @@ export function Footer() {
         <div className="mt-16 pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/50 text-sm">
-              © {new Date().getFullYear()} DoveIT Accounting. All rights reserved.
+              © {new Date().getFullYear()} Sovreign Payroll Services. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link to="#" className="text-primary-foreground/50 hover:text-primary-foreground text-sm transition-colors">

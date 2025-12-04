@@ -39,11 +39,15 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">D</span>
+            <div className="w-10 h-10 rounded-full flex items-center justify-center">
+             <img
+                 src="/logo.svg"            
+                 alt="Sovereign Payroll Services Logo"
+                 className="w-8 h-8 object-contain"       
+              />
             </div>
             <span className="font-bold text-xl text-foreground tracking-tight">
-              DoveIT<span className="text-accent">.</span>
+              Sovreign Payroll Services<span className="text-accent">.</span>
             </span>
           </Link>
 

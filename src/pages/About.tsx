@@ -37,7 +37,7 @@ const values = [
 ];
 
 const whyChooseUs = [
-  "Clean and professional UI with modern approach",
+    "Over 15 years of industry experience",
   "Fast turnaround on all deliverables",
   "Transparent communication at every step",
   "Tailored solutions for every client",
@@ -58,7 +58,7 @@ const About = () => {
               Building Financial Success, One Client at a Time
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              DoveIT Accounting is a premier accounting and financial consulting firm dedicated to helping businesses and individuals achieve their financial goals through expert guidance and personalized service.
+              Sovreign Payroll Services is a premier accounting and financial consulting firm dedicated to helping businesses and individuals achieve their financial goals through expert guidance and personalized service.
             </p>
           </div>
         </div>
@@ -132,7 +132,7 @@ const About = () => {
                 Why Choose Us
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-8">
-                Experience the DoveIT Difference
+                Experience the Sovreign Payroll Services Difference
               </h2>
               <ul className="space-y-4">
                 {whyChooseUs.map((item, index) => (

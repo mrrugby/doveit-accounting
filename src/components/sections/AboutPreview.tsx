@@ -22,19 +22,19 @@ const highlights = [
 
 export function AboutPreview() {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-8 bg-background">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-              About DoveIT
+              About Sovreign Payroll Services
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">
               Financial Excellence, <br />Delivered with Integrity
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              At DoveIT Accounting, we believe that every business deserves access to premium financial expertise. Our team of certified professionals brings together decades of experience in accounting, tax planning, and business advisory to help you achieve your financial goals.
+              At Sovreign Payroll Services, we believe that every business deserves access to premium financial expertise. Our team of certified professionals brings together decades of experience in accounting, tax planning, and business advisory to help you achieve your financial goals.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               We combine traditional accounting principles with modern technology to deliver efficient, accurate, and insightful financial services that drive business growth.
