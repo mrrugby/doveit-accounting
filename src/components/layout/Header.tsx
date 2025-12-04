@@ -81,29 +81,32 @@ export function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border animate-fade-in">
-            <div className="flex flex-col gap-4">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`text-base font-medium py-2 transition-colors ${
-                    location.pathname === item.href
-                      ? "text-foreground"
-                      : "text-muted-foreground"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <Button asChild variant="default" className="mt-2">
-                <Link to="/contact">Request a Quote</Link>
-              </Button>
-            </div>
-          </div>
-        )}
+      
+            {/* Mobile Navigation */}
+{isMobileMenuOpen && (
+  <div className="md:hidden py-6 border-t border-border bg-background shadow-sm">
+    <div className="flex flex-col gap-4 px-1">
+      {navigation.map((item) => (
+        <Link
+          key={item.name}
+          to={item.href}
+          className={`text-base font-medium py-2 transition-colors ${
+            location.pathname === item.href
+              ? "text-foreground"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          {item.name}
+        </Link>
+      ))}
+      <Button asChild variant="default" className="mt-2">
+        <Link to="/contact">Request a Quote</Link>
+      </Button>
+    </div>
+  </div>
+)}
+
+
       </nav>
     </header>
   );

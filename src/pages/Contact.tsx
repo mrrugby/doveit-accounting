@@ -58,7 +58,6 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     toast({
@@ -78,8 +77,8 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-24 bg-secondary/30">
-        <div className="container mx-auto px-6 lg:px-8">
+      <section className="py-20 md:py-24 bg-secondary/30">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
               Contact Us
@@ -87,20 +86,22 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mt-4 mb-6">
               Let's Start a Conversation
             </h1>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Have questions about our services? Ready to get started? We're here to help. Reach out and let's discuss how we can support your financial goals.
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+              Have questions about our services? Ready to get started? We're here to help. 
+              Reach out and let's discuss how we can support your financial goals.
             </p>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-5 gap-16">
+      <section className="py-20 md:py-24 bg-background">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-5 gap-10 lg:gap-16">
+
             {/* Contact Form */}
             <div className="lg:col-span-3">
-              <div className="premium-card p-8 md:p-10">
+              <div className="premium-card p-6 sm:p-8 md:p-10">
                 <h2 className="text-2xl font-bold text-foreground mb-2">Send Us a Message</h2>
                 <p className="text-muted-foreground mb-8">
                   Fill out the form below and we'll get back to you within 24 hours.
@@ -171,16 +172,17 @@ const Contact = () => {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button type="submit" variant="hero" size="lg" disabled={isSubmitting} className="gap-2">
+                    <Button type="submit" variant="hero" size="lg" disabled={isSubmitting} className="gap-2 w-full sm:w-auto">
                       {isSubmitting ? "Sending..." : "Submit Inquiry"}
                       <Send size={18} />
                     </Button>
+
                     <Button 
                       type="button" 
                       variant="outline" 
                       size="lg" 
                       onClick={handleWhatsApp}
-                      className="gap-2"
+                      className="gap-2 w-full sm:w-auto"
                     >
                       <MessageCircle size={18} />
                       Chat on WhatsApp
@@ -191,27 +193,25 @@ const Contact = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="lg:col-span-2">
-              <div className="space-y-6">
-                {contactInfo.map((item) => (
-                  <a
-                    key={item.title}
-                    href={item.href}
-                    className="premium-card p-6 flex items-start gap-5 block"
-                  >
-                    <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-6 h-6 text-accent" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground mb-1">{item.title}</p>
-                      <p className="font-medium text-foreground">{item.value}</p>
-                    </div>
-                  </a>
-                ))}
-              </div>
+            <div className="lg:col-span-2 space-y-6">
+              {contactInfo.map((item) => (
+                <a
+                  key={item.title}
+                  href={item.href}
+                  className="premium-card p-5 sm:p-6 flex items-start gap-5 block"
+                >
+                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-1">{item.title}</p>
+                    <p className="font-medium text-foreground">{item.value}</p>
+                  </div>
+                </a>
+              ))}
 
               {/* Additional Info */}
-              <div className="mt-8 p-8 bg-primary rounded-xl text-primary-foreground">
+              <div className="mt-6 p-6 sm:p-8 bg-primary rounded-xl text-primary-foreground">
                 <h3 className="font-bold text-lg mb-4">Why Contact Us?</h3>
                 <ul className="space-y-3 text-sm text-primary-foreground/80">
                   <li>• Free initial consultation</li>
@@ -225,9 +225,9 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Placeholder */}
+      {/* Map */}
       <section className="bg-secondary/30">
-        <div className="container mx-auto px-6 lg:px-8 py-16">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 py-16">
           <div className="bg-muted rounded-xl h-64 flex items-center justify-center">
             <div className="text-center">
               <MapPin className="w-12 h-12 text-muted-foreground/50 mx-auto mb-4" />
