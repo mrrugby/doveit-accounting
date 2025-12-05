@@ -36,7 +36,7 @@ export function HeroSection() {
             style={{ animationDelay: "0.3s" }}
           >
             Sovereign Payroll Services is a premium payroll solutions provider dedicated to delivering accuracy,
-reliability, and compliance for businesses of all sizes. Built on integrity and professionalism, we handle every aspect of payroll meticulously.
+            reliability, and compliance for businesses of all sizes. Built on integrity and professionalism, we handle every aspect of payroll meticulously.
           </p>
 
           {/* CTA Buttons */}

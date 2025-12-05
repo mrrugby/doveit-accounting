@@ -6,7 +6,6 @@ import {
   Eye, 
   CheckCircle, 
   ArrowRight,
-  Clock,
   Shield,
   MessageSquare,
   Settings,

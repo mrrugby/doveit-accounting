@@ -17,8 +17,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "info@doveitaccounting.com",
-    href: "mailto:info@doveitaccounting.com",
+    value: "info@sovreignpayrollservices.com",
+    href: "mailto:info@sovreignpayrollservices.com",
   },
   {
     icon: Phone,
